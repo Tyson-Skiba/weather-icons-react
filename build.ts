@@ -74,33 +74,6 @@ const build = async () => {
     const mappedIcons: IconSet = {};
 
     /* This is bad code, refactor */
-    /* iconMaps.forEach(imap => {
-        const id = Object.keys(imap)[0];
-        const setData = imap[id];
-
-        const keyedSetData: IconSet = {}; 
-
-        setData.forEach(data => {
-            const keyedNames: IconNames = {};
-            const typeDataId = Object.keys(data)[0];
-
-            const typeData = data[typeDataId];
-
-            const nameDataId = Object.keys(typeData)[0];
-            const names = typeData[nameDataId];
-
-            setDataKeys.forEach(dataKey => {
-                const names = data[dataKey];
-                keyedNames[dataKey] = names;
-            });
-
-            console.log(Object.keys(setData))
-        })
-
-
-        iconMap[id] = {};
-    }) */
-
     iconMaps.forEach(iconTypeData => { 
         const iconTypeId = Object.keys(iconTypeData)[0];
         const iconSetsData = iconTypeData[iconTypeId];

@@ -12,7 +12,7 @@ type IconNames<TIconType extends IconType, T extends IconSet<TIconType>> = keyof
 
 export type OpenWeatherMapIdentifier<TIconType extends IconType = 'fill'> = IconNames<TIconType, 'openweathermap'>;
 
-type CurriedIconRequestArguments<TIconType extends IconType, T extends IconSet<TIconType>> = [IconType, IconNames<TIconType, T>];
+type CurriedIconRequestArguments<TIconType extends IconType, T extends IconSet<TIconType>> = [IconNames<TIconType, T>];
 type IconRequestFunction<TIconType extends IconType, T extends IconSet<TIconType>> = (...args: CurriedIconRequestArguments<TIconType, T>) => string;
 
 type IconRepositories<TIconType extends IconType> = {
@@ -26,7 +26,7 @@ type IconRepositoryExport = {
 }
 
 type ReaderFactory<TIconType extends IconType, T extends IconSet<TIconType>> = {
-	create: (...args: [IconType, IconNames<TIconType, T>]) => Promise<string>;
+	create: (...args: [IconNames<TIconType, T>]) => Promise<string>;
 }
 
 interface SvgImport {
@@ -64,9 +64,9 @@ async function loadIconAsync<TIconType extends IconType, T extends IconSet<TIcon
     return <img src={svg} alt={iconName as string} />;
 }
 
-function readerFactory<TIconType extends IconType, T extends IconSet<TIconType>>(iconSet: T): ReaderFactory<TIconType, T>{
+function readerFactory<TIconType extends IconType, T extends IconSet<TIconType>>(iconType: TIconType, iconSet: T): ReaderFactory<TIconType, T>{
 	return {
-		create: async (iconType: IconType, iconName: IconNames<TIconType, T>) => {
+		create: async (iconName: IconNames<TIconType, T>) => {
 			const svg = await import(`@bybas/weather-icons/production/${iconType}/${iconSet}/${iconName}.svg`) as SvgImport;
 			return svg.default;
 		}
@@ -74,24 +74,22 @@ function readerFactory<TIconType extends IconType, T extends IconSet<TIconType>>
 }
 
 const fill: IconRepositories<'fill'> = {
-	all: createRepository<string, CurriedIconRequestArguments<'fill', 'all'>>(readerFactory<'fill', 'all'>('all').create),
-	darksky: createRepository<string, CurriedIconRequestArguments<'fill', 'darksky'>>(readerFactory<'fill', 'darksky'>('darksky').create),
-	openweathermap: createRepository<string, CurriedIconRequestArguments<'fill', 'openweathermap'>>(readerFactory<'fill', 'openweathermap'>('openweathermap').create),
+	all: createRepository<string, CurriedIconRequestArguments<'fill', 'all'>>(readerFactory<'fill', 'all'>('fill', 'all').create),
+	darksky: createRepository<string, CurriedIconRequestArguments<'fill', 'darksky'>>(readerFactory<'fill', 'darksky'>('fill', 'darksky').create),
+	openweathermap: createRepository<string, CurriedIconRequestArguments<'fill', 'openweathermap'>>(readerFactory<'fill', 'openweathermap'>('fill', 'openweathermap').create),
 }
 
 const line: IconRepositories<'line'> = {
-	all: createRepository<string, CurriedIconRequestArguments<'line', 'all'>>(readerFactory<'line', 'all'>('all').create),
-	darksky: createRepository<string, CurriedIconRequestArguments<'line', 'darksky'>>(readerFactory<'line', 'darksky'>('darksky').create),
-	openweathermap: createRepository<string, CurriedIconRequestArguments<'line', 'openweathermap'>>(readerFactory<'line', 'openweathermap'>('openweathermap').create),
+	all: createRepository<string, CurriedIconRequestArguments<'line', 'all'>>(readerFactory<'line', 'all'>('line', 'all').create),
+	darksky: createRepository<string, CurriedIconRequestArguments<'line', 'darksky'>>(readerFactory<'line', 'darksky'>('line', 'darksky').create),
+	openweathermap: createRepository<string, CurriedIconRequestArguments<'line', 'openweathermap'>>(readerFactory<'line', 'openweathermap'>('line', 'openweathermap').create),
 }
 
-const repositories: IconRepositoryExport = {
+export const repositories: IconRepositoryExport = {
 	fill,
 	line,
 }
 
-export const weatherIcon = {
-	loadAsync: loadIconAsync,
-	loadSvgStringAsync: loadIconSvgAsync,
-	repositories,
-}
+export const loadAsync = loadIconAsync;
+export const loadSvgStringAsync = loadIconSvgAsync;
+export const iconMap = mappedIcons;

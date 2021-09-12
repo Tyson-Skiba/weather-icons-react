@@ -16,14 +16,14 @@ Currently there are two.
 
 ```tsx
 import React, { useState, useEffect } from 'react';
-import { weatherIcon } from 'weather-icons-react';
+import { loadSvgStringAsync } from 'weather-icons-react';
 
 const Demo: React.FC = () => {
     const [icon, setIcon] = useState<string | undefined>();
 
     useEffect(() => {
         const getIcon = async () => {
-            const data = await weatherIcon.loadSvgStringAsync('darksky', 'fill', 'clear-day');
+            const data = await loadSvgStringAsync('darksky', 'fill', 'clear-day');
             setIcon(data);
         }
 
@@ -31,7 +31,7 @@ const Demo: React.FC = () => {
     }, []);
 
     return icon 
-        ? <img src={icon} alt="my icon" /> 
+        ? <img src={icon} alt="weather icon" /> 
         : <div>Loading...</div>;
 }
 
@@ -41,14 +41,14 @@ const Demo: React.FC = () => {
 
 ```tsx
 import React, { useState, useEffect } from 'react';
-import { weatherIcon } from 'weather-icons-react';
+import { loadAsync } from 'weather-icons-react';
 
 const Demo: React.FC = () => {
     const [Icon, setIcon] = useState<JSX.Element | undefined>();
 
     useEffect(() => {
         const getIcon = async () => {
-            const icon = await weatherIcon.loadAsync('darksky', 'fill', 'clear-day');
+            const icon = await loadAsync('darksky', 'fill', 'clear-day');
             setIcon(icon);
         }
 
@@ -63,3 +63,19 @@ const Demo: React.FC = () => {
 ### Suspense
 
 Because suspense is reliant on a different flow this library exports `repositories` which are essentially just fetchers that cache and throw the result.
+
+```tsx
+import React, { Suspense } from 'react';
+import { repositories } from 'weather-icons-react';
+
+const Icon: React.FC = () => {
+    const svg = repositories.fill.darksky.read('clear-night');
+    return <img src={svg} alt="weather icon" />;
+}
+
+export const Temperature: React.FC = () => (
+    <Suspense fallback={<div>Loading</div>}>
+        <Icon />
+    </Suspense>
+)
+```
