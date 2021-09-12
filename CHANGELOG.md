@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.5...v1.0.6) (2021-09-12)
+
+
+### Bug Fixes
+
+* disable tsc watch in pipeline ([e0f60d1](https://github.com/Tyson-Skiba/weather-icons-react/commit/e0f60d186c42998a7e06d4ef0f762aa8b77356c1))
+
 ## [1.0.5](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.4...v1.0.5) (2021-09-12)
 
 
