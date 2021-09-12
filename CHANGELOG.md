@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.2...v1.0.3) (2021-09-12)
+
+
+### Bug Fixes
+
+* deploy job env ([85899b3](https://github.com/Tyson-Skiba/weather-icons-react/commit/85899b3f066390424652bc2c603d984b2c03134f))
+
 ## [1.0.2](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.1...v1.0.2) (2021-09-12)
 
 
