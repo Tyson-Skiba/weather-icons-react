@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.6...v1.0.7) (2021-09-12)
+
+
+### Bug Fixes
+
+* remove unused code ([0635f50](https://github.com/Tyson-Skiba/weather-icons-react/commit/0635f50e885f48b5f60254ab04f976d1d5612a60))
+
 ## [1.0.6](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.5...v1.0.6) (2021-09-12)
 
 
