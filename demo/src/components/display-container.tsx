@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { repositories } from 'react-weather-illustrations';
 import { CopyContent } from './copy-content';
 import { Loader } from '../generated/suspense';
-
+import { examples } from '../generated/suspense/examples';
 interface DisplayContainerProps {
   importKey: string;
 }
@@ -60,7 +60,7 @@ export const Demo: React.FC = () => (
 )
 
 export const DisplayContainer: React.FC<DisplayContainerProps> = ({ importKey }) => {
-
+console.log(importKey)
   return (
     <DisplayContainerRoot>
       <Hero isCodeBlock>
@@ -68,9 +68,9 @@ export const DisplayContainer: React.FC<DisplayContainerProps> = ({ importKey })
           language="typescript"
           style={tomorrow}
         >
-          {demoCode}
+          {examples[importKey]}
         </SyntaxHighlighter>
-        <CopyContent text={demoCode} />
+        <CopyContent text={examples[importKey]} />
       </Hero>
       <Hero>
         <Loader requestKey={importKey} />

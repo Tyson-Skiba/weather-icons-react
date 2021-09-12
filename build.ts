@@ -67,7 +67,7 @@ export const Loader: React.FC<SuspenseLoaderProps> = ({
 }
 `;
 
-const suspenseDemos = `export const examples = {
+const suspenseDemos = `export const examples: Record<string, string> = {
     {{ demos }}
 }
 `;
@@ -177,7 +177,7 @@ const build = async () => {
             .replace('{{ type }}', icon.type)
             .replace('{{ key }}', icon.name);
 
-        demos.push(`\t${importKey.replace(/-/g, '')}: ${copyableDemo}`);
+        demos.push(`\t'${key.replace(/-/g, '')}': \`${copyableDemo}\``);
 
         return fs.writeFile(path.join(demoComponentPathSuspense, `${key}.tsx`), suspsense);
     })
