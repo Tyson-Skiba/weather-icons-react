@@ -1,0 +1,28 @@
+{
+  "name": "weather-icons-react",
+  "version": "1.0.0",
+  "description": "A react wrapper around @bybas/weather-icons that allows chunking of assets to aid with caching and reduce initial bundle",
+  "main": "index.js",
+  "module": "index.es6.js",
+  "author": "Tyson Skiba <tskiba@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "ts-node --project ./node.tsconfig.json build.ts"
+  },
+  "peerDependencies": {
+    "@bybas/weather-icons": "^2.0.0",
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@bybas/weather-icons": "^2.0.0",
+    "@types/node": "^16.9.1",
+    "@types/object-hash": "^2.1.1",
+    "@types/react": "^17.0.20",
+    "react": "^16.8.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "object-hash": "^2.2.0"
+  }
+}
