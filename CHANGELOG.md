@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.4...v1.0.5) (2021-09-12)
+
+
+### Bug Fixes
+
+* run yarn in demo directory before deploying pages ([f32c898](https://github.com/Tyson-Skiba/weather-icons-react/commit/f32c898bdb7967308e84755b49ac4d256155c945))
+
 ## [1.0.4](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.3...v1.0.4) (2021-09-12)
 
 
