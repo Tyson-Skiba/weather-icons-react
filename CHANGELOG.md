@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.1...v1.0.2) (2021-09-12)
+
+
+### Bug Fixes
+
+* add pages action for demo ([56228aa](https://github.com/Tyson-Skiba/weather-icons-react/commit/56228aad4052a630b77bc4450e600cb0587c4958))
+
 ## [1.0.1](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.0...v1.0.1) (2021-09-12)
 
 
