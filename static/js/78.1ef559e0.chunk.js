@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[78],{415:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/thermometer-colder.88b91af5.svg"}}]);
-//# sourceMappingURL=78.1ef559e0.chunk.js.map

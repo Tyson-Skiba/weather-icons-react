@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[73],{410:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/star.e4f1743e.svg"}}]);
-//# sourceMappingURL=73.ff29eb03.chunk.js.map

@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[10],{347:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/dust-day.4677c89e.svg"}}]);
-//# sourceMappingURL=10.d65e2e95.chunk.js.map

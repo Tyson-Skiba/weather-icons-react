@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[77],{414:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/thermometer-celsius.1831b1d8.svg"}}]);
-//# sourceMappingURL=77.d0d9302c.chunk.js.map

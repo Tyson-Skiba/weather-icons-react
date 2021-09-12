@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[235],{572:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/thermometer-fahrenheit.9e51f6fd.svg"}}]);
-//# sourceMappingURL=235.ad3755e6.chunk.js.map

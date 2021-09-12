@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[228],{565:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/solar-eclipse.9adfc7f1.svg"}}]);
-//# sourceMappingURL=228.f801803f.chunk.js.map

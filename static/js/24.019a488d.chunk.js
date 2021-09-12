@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[24],{361:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/humidity.f6f97c5f.svg"}}]);
-//# sourceMappingURL=24.019a488d.chunk.js.map

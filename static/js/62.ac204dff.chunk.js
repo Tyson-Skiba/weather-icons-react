@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[62],{399:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/pressure-low-alt.c6028b18.svg"}}]);
-//# sourceMappingURL=62.ac204dff.chunk.js.map

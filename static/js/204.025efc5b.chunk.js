@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[204],{541:function(e,a,t){"use strict";t.r(a),a.default=t.p+"static/media/partly-cloudy-day-smoke.1a98a205.svg"}}]);
-//# sourceMappingURL=204.025efc5b.chunk.js.map
