@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.3...v1.0.4) (2021-09-12)
+
+
+### Bug Fixes
+
+* use corrrect directory for github pages app ([3856aef](https://github.com/Tyson-Skiba/weather-icons-react/commit/3856aefab049b5a115fc024adfc0807407f2339b))
+
 ## [1.0.3](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.2...v1.0.3) (2021-09-12)
 
 
