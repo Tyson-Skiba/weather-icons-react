@@ -8,7 +8,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const barometer: React.FC = () => (
+export const Barometer: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -22,7 +22,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const celsius: React.FC = () => (
+export const Celsius: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -36,7 +36,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-day: React.FC = () => (
+export const ClearDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -50,7 +50,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-night: React.FC = () => (
+export const ClearNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -64,7 +64,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const cloudy: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -78,7 +78,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const compass: React.FC = () => (
+export const Compass: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -92,7 +92,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const drizzle: React.FC = () => (
+export const Drizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -106,7 +106,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust-day: React.FC = () => (
+export const DustDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -120,7 +120,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust-night: React.FC = () => (
+export const DustNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -134,7 +134,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust-wind: React.FC = () => (
+export const DustWind: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -148,7 +148,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust: React.FC = () => (
+export const Dust: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -162,7 +162,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fahrenheit: React.FC = () => (
+export const Fahrenheit: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -176,7 +176,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const falling-stars: React.FC = () => (
+export const FallingStars: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -190,7 +190,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog-day: React.FC = () => (
+export const FogDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -204,7 +204,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog-night: React.FC = () => (
+export const FogNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -218,7 +218,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog: React.FC = () => (
+export const Fog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -232,7 +232,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const hail: React.FC = () => (
+export const Hail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -246,7 +246,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const haze-day: React.FC = () => (
+export const HazeDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -260,7 +260,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const haze-night: React.FC = () => (
+export const HazeNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -274,7 +274,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const haze: React.FC = () => (
+export const Haze: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -288,7 +288,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const horizon: React.FC = () => (
+export const Horizon: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -302,7 +302,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const humidity: React.FC = () => (
+export const Humidity: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -316,7 +316,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const hurricane: React.FC = () => (
+export const Hurricane: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -330,7 +330,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const lightning-bolt: React.FC = () => (
+export const LightningBolt: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -344,7 +344,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const mist: React.FC = () => (
+export const Mist: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -358,7 +358,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-first-quarter: React.FC = () => (
+export const MoonFirstQuarter: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -372,7 +372,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-full: React.FC = () => (
+export const MoonFull: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -386,7 +386,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-last-quarter: React.FC = () => (
+export const MoonLastQuarter: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -400,7 +400,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-new: React.FC = () => (
+export const MoonNew: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -414,7 +414,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waning-crescent: React.FC = () => (
+export const MoonWaningCrescent: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -428,7 +428,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waning-gibbous: React.FC = () => (
+export const MoonWaningGibbous: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -442,7 +442,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waxing-crescent: React.FC = () => (
+export const MoonWaxingCrescent: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -456,7 +456,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waxing-gibbous: React.FC = () => (
+export const MoonWaxingGibbous: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -470,7 +470,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moonrise: React.FC = () => (
+export const Moonrise: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -484,7 +484,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moonset: React.FC = () => (
+export const Moonset: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -498,7 +498,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const not-available: React.FC = () => (
+export const NotAvailable: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -512,7 +512,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const overcast-day: React.FC = () => (
+export const OvercastDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -526,7 +526,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const overcast-night: React.FC = () => (
+export const OvercastNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -540,7 +540,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const overcast: React.FC = () => (
+export const Overcast: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -554,7 +554,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-drizzle: React.FC = () => (
+export const PartlyCloudyDayDrizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -568,7 +568,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-fog: React.FC = () => (
+export const PartlyCloudyDayFog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -582,7 +582,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-hail: React.FC = () => (
+export const PartlyCloudyDayHail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -596,7 +596,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-haze: React.FC = () => (
+export const PartlyCloudyDayHaze: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -610,7 +610,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-rain: React.FC = () => (
+export const PartlyCloudyDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -624,7 +624,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-sleet: React.FC = () => (
+export const PartlyCloudyDaySleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -638,7 +638,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-smoke: React.FC = () => (
+export const PartlyCloudyDaySmoke: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -652,7 +652,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-snow: React.FC = () => (
+export const PartlyCloudyDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -666,7 +666,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day: React.FC = () => (
+export const PartlyCloudyDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -680,7 +680,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-drizzle: React.FC = () => (
+export const PartlyCloudyNightDrizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -694,7 +694,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-fog: React.FC = () => (
+export const PartlyCloudyNightFog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -708,7 +708,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-hail: React.FC = () => (
+export const PartlyCloudyNightHail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -722,7 +722,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-haze: React.FC = () => (
+export const PartlyCloudyNightHaze: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -736,7 +736,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-rain: React.FC = () => (
+export const PartlyCloudyNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -750,7 +750,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-sleet: React.FC = () => (
+export const PartlyCloudyNightSleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -764,7 +764,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-smoke: React.FC = () => (
+export const PartlyCloudyNightSmoke: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -778,7 +778,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-snow: React.FC = () => (
+export const PartlyCloudyNightSnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -792,7 +792,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night: React.FC = () => (
+export const PartlyCloudyNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -806,7 +806,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-high-alt: React.FC = () => (
+export const PressureHighAlt: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -820,7 +820,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-high: React.FC = () => (
+export const PressureHigh: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -834,7 +834,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-low-alt: React.FC = () => (
+export const PressureLowAlt: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -848,7 +848,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-low: React.FC = () => (
+export const PressureLow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -862,7 +862,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const rain: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -876,7 +876,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const raindrop: React.FC = () => (
+export const Raindrop: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -890,7 +890,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const raindrops: React.FC = () => (
+export const Raindrops: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -904,7 +904,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sleet: React.FC = () => (
+export const Sleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -918,7 +918,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const smoke-particles: React.FC = () => (
+export const SmokeParticles: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -932,7 +932,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const smoke: React.FC = () => (
+export const Smoke: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -946,7 +946,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const snow: React.FC = () => (
+export const Snow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -960,7 +960,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const snowflake: React.FC = () => (
+export const Snowflake: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -974,7 +974,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const solar-eclipse: React.FC = () => (
+export const SolarEclipse: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -988,7 +988,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const star: React.FC = () => (
+export const Star: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1002,7 +1002,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const starry-night: React.FC = () => (
+export const StarryNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1016,7 +1016,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sunrise: React.FC = () => (
+export const Sunrise: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1030,7 +1030,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sunset: React.FC = () => (
+export const Sunset: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1044,7 +1044,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-celsius: React.FC = () => (
+export const ThermometerCelsius: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1058,7 +1058,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-colder: React.FC = () => (
+export const ThermometerColder: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1072,7 +1072,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-fahrenheit: React.FC = () => (
+export const ThermometerFahrenheit: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1086,7 +1086,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-glass-celsius: React.FC = () => (
+export const ThermometerGlassCelsius: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1100,7 +1100,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-glass-fahrenheit: React.FC = () => (
+export const ThermometerGlassFahrenheit: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1114,7 +1114,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-glass: React.FC = () => (
+export const ThermometerGlass: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1128,7 +1128,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-mercury-cold: React.FC = () => (
+export const ThermometerMercuryCold: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1142,7 +1142,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-mercury: React.FC = () => (
+export const ThermometerMercury: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1156,7 +1156,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-warmer: React.FC = () => (
+export const ThermometerWarmer: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1170,7 +1170,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer: React.FC = () => (
+export const Thermometer: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1184,7 +1184,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-day-rain: React.FC = () => (
+export const ThunderstormsDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1198,7 +1198,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-day-snow: React.FC = () => (
+export const ThunderstormsDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1212,7 +1212,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-day: React.FC = () => (
+export const ThunderstormsDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1226,7 +1226,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-night-rain: React.FC = () => (
+export const ThunderstormsNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1240,7 +1240,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-night-snow: React.FC = () => (
+export const ThunderstormsNightSnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1254,7 +1254,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-night: React.FC = () => (
+export const ThunderstormsNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1268,7 +1268,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-rain: React.FC = () => (
+export const ThunderstormsRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1282,7 +1282,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-snow: React.FC = () => (
+export const ThunderstormsSnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1296,7 +1296,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms: React.FC = () => (
+export const Thunderstorms: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1310,7 +1310,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const tornado: React.FC = () => (
+export const Tornado: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1324,7 +1324,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const umbrella: React.FC = () => (
+export const Umbrella: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1338,7 +1338,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-1: React.FC = () => (
+export const UvIndex1: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1352,7 +1352,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-10: React.FC = () => (
+export const UvIndex10: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1366,7 +1366,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-11: React.FC = () => (
+export const UvIndex11: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1380,7 +1380,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-2: React.FC = () => (
+export const UvIndex2: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1394,7 +1394,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-3: React.FC = () => (
+export const UvIndex3: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1408,7 +1408,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-4: React.FC = () => (
+export const UvIndex4: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1422,7 +1422,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-5: React.FC = () => (
+export const UvIndex5: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1436,7 +1436,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-6: React.FC = () => (
+export const UvIndex6: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1450,7 +1450,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-7: React.FC = () => (
+export const UvIndex7: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1464,7 +1464,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-8: React.FC = () => (
+export const UvIndex8: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1478,7 +1478,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-9: React.FC = () => (
+export const UvIndex9: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1492,7 +1492,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index: React.FC = () => (
+export const UvIndex: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1506,7 +1506,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-0: React.FC = () => (
+export const WindBeaufort0: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1520,7 +1520,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-1: React.FC = () => (
+export const WindBeaufort1: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1534,7 +1534,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-10: React.FC = () => (
+export const WindBeaufort10: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1548,7 +1548,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-11: React.FC = () => (
+export const WindBeaufort11: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1562,7 +1562,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-12: React.FC = () => (
+export const WindBeaufort12: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1576,7 +1576,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-2: React.FC = () => (
+export const WindBeaufort2: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1590,7 +1590,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-3: React.FC = () => (
+export const WindBeaufort3: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1604,7 +1604,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-4: React.FC = () => (
+export const WindBeaufort4: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1618,7 +1618,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-5: React.FC = () => (
+export const WindBeaufort5: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1632,7 +1632,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-6: React.FC = () => (
+export const WindBeaufort6: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1646,7 +1646,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-7: React.FC = () => (
+export const WindBeaufort7: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1660,7 +1660,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-8: React.FC = () => (
+export const WindBeaufort8: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1674,7 +1674,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-9: React.FC = () => (
+export const WindBeaufort9: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1688,7 +1688,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind: React.FC = () => (
+export const Wind: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1702,7 +1702,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const windsock: React.FC = () => (
+export const Windsock: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1716,7 +1716,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-day: React.FC = () => (
+export const ClearDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1730,7 +1730,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-night: React.FC = () => (
+export const ClearNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1744,7 +1744,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const cloudy: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1758,7 +1758,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const drizzle: React.FC = () => (
+export const Drizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1772,7 +1772,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog: React.FC = () => (
+export const Fog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1786,7 +1786,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const hail: React.FC = () => (
+export const Hail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1800,7 +1800,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-rain: React.FC = () => (
+export const PartlyCloudyDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1814,7 +1814,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day: React.FC = () => (
+export const PartlyCloudyDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1828,7 +1828,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-rain: React.FC = () => (
+export const PartlyCloudyNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1842,7 +1842,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night: React.FC = () => (
+export const PartlyCloudyNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1856,7 +1856,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const rain: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1870,7 +1870,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sleet: React.FC = () => (
+export const Sleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1884,7 +1884,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const snow: React.FC = () => (
+export const Snow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1898,7 +1898,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorm: React.FC = () => (
+export const Thunderstorm: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1912,7 +1912,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const tornado: React.FC = () => (
+export const Tornado: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1926,7 +1926,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind: React.FC = () => (
+export const Wind: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1940,7 +1940,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 01d: React.FC = () => (
+export const ClearDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1954,7 +1954,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 01n: React.FC = () => (
+export const ClearNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1968,7 +1968,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 02d: React.FC = () => (
+export const PartlyCloudyDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1982,7 +1982,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 02n: React.FC = () => (
+export const PartlyCloudyNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -1996,7 +1996,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 03d: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2010,7 +2010,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 03n: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2024,7 +2024,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 04d: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2038,7 +2038,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 04n: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2052,7 +2052,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 09d: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2066,7 +2066,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 09n: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2080,7 +2080,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 10d: React.FC = () => (
+export const PartlyCloudyDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2094,7 +2094,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 10n: React.FC = () => (
+export const PartlyCloudyNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2108,7 +2108,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 11d: React.FC = () => (
+export const Thunderstorms: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2122,7 +2122,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 11n: React.FC = () => (
+export const Thunderstorms: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2136,7 +2136,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 13d: React.FC = () => (
+export const PartlyCloudyDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2150,7 +2150,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 13n: React.FC = () => (
+export const PartlyCloudyDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2164,7 +2164,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 50d: React.FC = () => (
+export const Mist: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2178,7 +2178,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 50n: React.FC = () => (
+export const Mist: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2192,7 +2192,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const barometer: React.FC = () => (
+export const Barometer: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2206,7 +2206,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const celsius: React.FC = () => (
+export const Celsius: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2220,7 +2220,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-day: React.FC = () => (
+export const ClearDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2234,7 +2234,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-night: React.FC = () => (
+export const ClearNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2248,7 +2248,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const cloudy: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2262,7 +2262,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const compass: React.FC = () => (
+export const Compass: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2276,7 +2276,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const drizzle: React.FC = () => (
+export const Drizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2290,7 +2290,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust-day: React.FC = () => (
+export const DustDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2304,7 +2304,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust-night: React.FC = () => (
+export const DustNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2318,7 +2318,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust-wind: React.FC = () => (
+export const DustWind: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2332,7 +2332,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const dust: React.FC = () => (
+export const Dust: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2346,7 +2346,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fahrenheit: React.FC = () => (
+export const Fahrenheit: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2360,7 +2360,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const falling-stars: React.FC = () => (
+export const FallingStars: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2374,7 +2374,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog-day: React.FC = () => (
+export const FogDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2388,7 +2388,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog-night: React.FC = () => (
+export const FogNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2402,7 +2402,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog: React.FC = () => (
+export const Fog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2416,7 +2416,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const hail: React.FC = () => (
+export const Hail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2430,7 +2430,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const haze-day: React.FC = () => (
+export const HazeDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2444,7 +2444,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const haze-night: React.FC = () => (
+export const HazeNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2458,7 +2458,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const haze: React.FC = () => (
+export const Haze: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2472,7 +2472,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const horizon: React.FC = () => (
+export const Horizon: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2486,7 +2486,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const humidity: React.FC = () => (
+export const Humidity: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2500,7 +2500,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const hurricane: React.FC = () => (
+export const Hurricane: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2514,7 +2514,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const lightning-bolt: React.FC = () => (
+export const LightningBolt: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2528,7 +2528,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const mist: React.FC = () => (
+export const Mist: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2542,7 +2542,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-first-quarter: React.FC = () => (
+export const MoonFirstQuarter: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2556,7 +2556,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-full: React.FC = () => (
+export const MoonFull: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2570,7 +2570,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-last-quarter: React.FC = () => (
+export const MoonLastQuarter: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2584,7 +2584,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-new: React.FC = () => (
+export const MoonNew: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2598,7 +2598,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waning-crescent: React.FC = () => (
+export const MoonWaningCrescent: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2612,7 +2612,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waning-gibbous: React.FC = () => (
+export const MoonWaningGibbous: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2626,7 +2626,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waxing-crescent: React.FC = () => (
+export const MoonWaxingCrescent: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2640,7 +2640,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moon-waxing-gibbous: React.FC = () => (
+export const MoonWaxingGibbous: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2654,7 +2654,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moonrise: React.FC = () => (
+export const Moonrise: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2668,7 +2668,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const moonset: React.FC = () => (
+export const Moonset: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2682,7 +2682,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const not-available: React.FC = () => (
+export const NotAvailable: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2696,7 +2696,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const overcast-day: React.FC = () => (
+export const OvercastDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2710,7 +2710,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const overcast-night: React.FC = () => (
+export const OvercastNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2724,7 +2724,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const overcast: React.FC = () => (
+export const Overcast: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2738,7 +2738,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-drizzle: React.FC = () => (
+export const PartlyCloudyDayDrizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2752,7 +2752,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-fog: React.FC = () => (
+export const PartlyCloudyDayFog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2766,7 +2766,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-hail: React.FC = () => (
+export const PartlyCloudyDayHail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2780,7 +2780,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-haze: React.FC = () => (
+export const PartlyCloudyDayHaze: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2794,7 +2794,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-rain: React.FC = () => (
+export const PartlyCloudyDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2808,7 +2808,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-sleet: React.FC = () => (
+export const PartlyCloudyDaySleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2822,7 +2822,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-smoke: React.FC = () => (
+export const PartlyCloudyDaySmoke: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2836,7 +2836,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-snow: React.FC = () => (
+export const PartlyCloudyDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2850,7 +2850,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day: React.FC = () => (
+export const PartlyCloudyDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2864,7 +2864,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-drizzle: React.FC = () => (
+export const PartlyCloudyNightDrizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2878,7 +2878,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-fog: React.FC = () => (
+export const PartlyCloudyNightFog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2892,7 +2892,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-hail: React.FC = () => (
+export const PartlyCloudyNightHail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2906,7 +2906,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-haze: React.FC = () => (
+export const PartlyCloudyNightHaze: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2920,7 +2920,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-rain: React.FC = () => (
+export const PartlyCloudyNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2934,7 +2934,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-sleet: React.FC = () => (
+export const PartlyCloudyNightSleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2948,7 +2948,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-smoke: React.FC = () => (
+export const PartlyCloudyNightSmoke: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2962,7 +2962,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-snow: React.FC = () => (
+export const PartlyCloudyNightSnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2976,7 +2976,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night: React.FC = () => (
+export const PartlyCloudyNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -2990,7 +2990,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-high-alt: React.FC = () => (
+export const PressureHighAlt: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3004,7 +3004,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-high: React.FC = () => (
+export const PressureHigh: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3018,7 +3018,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-low-alt: React.FC = () => (
+export const PressureLowAlt: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3032,7 +3032,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const pressure-low: React.FC = () => (
+export const PressureLow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3046,7 +3046,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const rain: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3060,7 +3060,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const raindrop: React.FC = () => (
+export const Raindrop: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3074,7 +3074,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const raindrops: React.FC = () => (
+export const Raindrops: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3088,7 +3088,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sleet: React.FC = () => (
+export const Sleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3102,7 +3102,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const smoke-particles: React.FC = () => (
+export const SmokeParticles: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3116,7 +3116,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const smoke: React.FC = () => (
+export const Smoke: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3130,7 +3130,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const snow: React.FC = () => (
+export const Snow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3144,7 +3144,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const snowflake: React.FC = () => (
+export const Snowflake: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3158,7 +3158,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const solar-eclipse: React.FC = () => (
+export const SolarEclipse: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3172,7 +3172,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const star: React.FC = () => (
+export const Star: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3186,7 +3186,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const starry-night: React.FC = () => (
+export const StarryNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3200,7 +3200,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sunrise: React.FC = () => (
+export const Sunrise: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3214,7 +3214,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sunset: React.FC = () => (
+export const Sunset: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3228,7 +3228,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-celsius: React.FC = () => (
+export const ThermometerCelsius: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3242,7 +3242,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-colder: React.FC = () => (
+export const ThermometerColder: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3256,7 +3256,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-fahrenheit: React.FC = () => (
+export const ThermometerFahrenheit: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3270,7 +3270,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-glass-celsius: React.FC = () => (
+export const ThermometerGlassCelsius: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3284,7 +3284,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-glass-fahrenheit: React.FC = () => (
+export const ThermometerGlassFahrenheit: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3298,7 +3298,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-glass: React.FC = () => (
+export const ThermometerGlass: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3312,7 +3312,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-mercury-cold: React.FC = () => (
+export const ThermometerMercuryCold: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3326,7 +3326,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-mercury: React.FC = () => (
+export const ThermometerMercury: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3340,7 +3340,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer-warmer: React.FC = () => (
+export const ThermometerWarmer: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3354,7 +3354,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thermometer: React.FC = () => (
+export const Thermometer: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3368,7 +3368,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-day-rain: React.FC = () => (
+export const ThunderstormsDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3382,7 +3382,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-day-snow: React.FC = () => (
+export const ThunderstormsDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3396,7 +3396,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-day: React.FC = () => (
+export const ThunderstormsDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3410,7 +3410,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-night-rain: React.FC = () => (
+export const ThunderstormsNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3424,7 +3424,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-night-snow: React.FC = () => (
+export const ThunderstormsNightSnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3438,7 +3438,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-night: React.FC = () => (
+export const ThunderstormsNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3452,7 +3452,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-rain: React.FC = () => (
+export const ThunderstormsRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3466,7 +3466,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms-snow: React.FC = () => (
+export const ThunderstormsSnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3480,7 +3480,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorms: React.FC = () => (
+export const Thunderstorms: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3494,7 +3494,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const tornado: React.FC = () => (
+export const Tornado: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3508,7 +3508,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const umbrella: React.FC = () => (
+export const Umbrella: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3522,7 +3522,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-1: React.FC = () => (
+export const UvIndex1: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3536,7 +3536,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-10: React.FC = () => (
+export const UvIndex10: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3550,7 +3550,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-11: React.FC = () => (
+export const UvIndex11: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3564,7 +3564,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-2: React.FC = () => (
+export const UvIndex2: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3578,7 +3578,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-3: React.FC = () => (
+export const UvIndex3: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3592,7 +3592,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-4: React.FC = () => (
+export const UvIndex4: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3606,7 +3606,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-5: React.FC = () => (
+export const UvIndex5: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3620,7 +3620,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-6: React.FC = () => (
+export const UvIndex6: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3634,7 +3634,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-7: React.FC = () => (
+export const UvIndex7: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3648,7 +3648,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-8: React.FC = () => (
+export const UvIndex8: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3662,7 +3662,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index-9: React.FC = () => (
+export const UvIndex9: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3676,7 +3676,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const uv-index: React.FC = () => (
+export const UvIndex: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3690,7 +3690,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-0: React.FC = () => (
+export const WindBeaufort0: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3704,7 +3704,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-1: React.FC = () => (
+export const WindBeaufort1: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3718,7 +3718,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-10: React.FC = () => (
+export const WindBeaufort10: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3732,7 +3732,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-11: React.FC = () => (
+export const WindBeaufort11: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3746,7 +3746,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-12: React.FC = () => (
+export const WindBeaufort12: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3760,7 +3760,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-2: React.FC = () => (
+export const WindBeaufort2: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3774,7 +3774,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-3: React.FC = () => (
+export const WindBeaufort3: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3788,7 +3788,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-4: React.FC = () => (
+export const WindBeaufort4: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3802,7 +3802,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-5: React.FC = () => (
+export const WindBeaufort5: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3816,7 +3816,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-6: React.FC = () => (
+export const WindBeaufort6: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3830,7 +3830,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-7: React.FC = () => (
+export const WindBeaufort7: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3844,7 +3844,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-8: React.FC = () => (
+export const WindBeaufort8: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3858,7 +3858,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind-beaufort-9: React.FC = () => (
+export const WindBeaufort9: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3872,7 +3872,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind: React.FC = () => (
+export const Wind: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3886,7 +3886,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const windsock: React.FC = () => (
+export const Windsock: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3900,7 +3900,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-day: React.FC = () => (
+export const ClearDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3914,7 +3914,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const clear-night: React.FC = () => (
+export const ClearNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3928,7 +3928,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const cloudy: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3942,7 +3942,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const drizzle: React.FC = () => (
+export const Drizzle: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3956,7 +3956,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const fog: React.FC = () => (
+export const Fog: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3970,7 +3970,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const hail: React.FC = () => (
+export const Hail: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3984,7 +3984,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day-rain: React.FC = () => (
+export const PartlyCloudyDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -3998,7 +3998,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-day: React.FC = () => (
+export const PartlyCloudyDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4012,7 +4012,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night-rain: React.FC = () => (
+export const PartlyCloudyNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4026,7 +4026,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const partly-cloudy-night: React.FC = () => (
+export const PartlyCloudyNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4040,7 +4040,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const rain: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4054,7 +4054,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const sleet: React.FC = () => (
+export const Sleet: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4068,7 +4068,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const snow: React.FC = () => (
+export const Snow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4082,7 +4082,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const thunderstorm: React.FC = () => (
+export const Thunderstorm: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4096,7 +4096,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const tornado: React.FC = () => (
+export const Tornado: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4110,7 +4110,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const wind: React.FC = () => (
+export const Wind: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4124,7 +4124,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 01d: React.FC = () => (
+export const ClearDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4138,7 +4138,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 01n: React.FC = () => (
+export const ClearNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4152,7 +4152,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 02d: React.FC = () => (
+export const PartlyCloudyDay: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4166,7 +4166,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 02n: React.FC = () => (
+export const PartlyCloudyNight: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4180,7 +4180,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 03d: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4194,7 +4194,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 03n: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4208,7 +4208,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 04d: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4222,7 +4222,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 04n: React.FC = () => (
+export const Cloudy: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4236,7 +4236,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 09d: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4250,7 +4250,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 09n: React.FC = () => (
+export const Rain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4264,7 +4264,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 10d: React.FC = () => (
+export const PartlyCloudyDayRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4278,7 +4278,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 10n: React.FC = () => (
+export const PartlyCloudyNightRain: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4292,7 +4292,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 11d: React.FC = () => (
+export const Thunderstorms: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4306,7 +4306,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 11n: React.FC = () => (
+export const Thunderstorms: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4320,7 +4320,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 13d: React.FC = () => (
+export const PartlyCloudyDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4334,7 +4334,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 13n: React.FC = () => (
+export const PartlyCloudyDaySnow: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4348,7 +4348,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 50d: React.FC = () => (
+export const Mist: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>
@@ -4362,7 +4362,7 @@ const Icon: React.FC = () => {
   return <img src={svg} alt="weather icon" />;
 }
 
-export const 50n: React.FC = () => (
+export const Mist: React.FC = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <Icon />
   </React.Suspense>

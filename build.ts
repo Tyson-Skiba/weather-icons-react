@@ -28,6 +28,30 @@ const demoComponentPath = path.join(__dirname, 'demo', 'src', 'generated');
 const demoComponentPathSuspense = path.join(demoComponentPath, 'suspense');
 const demoComponentPathFc = path.join(demoComponentPath, 'fc');
 
+const nameMap: Record<string, string> = {
+    "01d": "ClearDay",
+    "01n": "ClearNight",
+    "02d": "PartlyCloudyDay",
+    "02n": "PartlyCloudyNight",
+    "03d": "Cloudy",
+    "03n": "Cloudy",
+    "04d": "Cloudy",
+    "04n": "Cloudy",
+    "09d": "Rain",
+    "09n": "Rain",
+    "10d": "PartlyCloudyDayRain",
+    "10n": "PartlyCloudyNightRain",
+    "11d": "Thunderstorms",
+    "11n": "Thunderstorms",
+    "13d": "PartlyCloudyDaySnow",
+    "13n": "PartlyCloudyDaySnow",
+    "50d": "Mist",
+    "50n": "Mist"
+}
+
+const toPascalCase = (text: string) => text.replace(/(^\w|-\w)/g, val => val.replace(/-/, "").toUpperCase());
+const toFunctionName = (text: string) => nameMap[text] ? nameMap[text] : toPascalCase(text);
+
 const mapTemplate = `/* THIS IS A GENERATED FILE */
 /* DO NOT EDIT ME DIRECTLLY */
 
@@ -50,9 +74,10 @@ export const {{ key }}: React.FC = () => (
 )`;
 
 const fcTemplate = `import React, { useState, useEffect } from 'react';
+import { loadSvgStringAsync } from 'react-weather-illustrations';
 {{ loaderImport }}
 
-const {{ key }}: React.FC = () => {
+export const {{ key }}: React.FC = () => {
     const [icon, setIcon] = useState<string | undefined>();
   
     useEffect(() => {
@@ -203,7 +228,7 @@ const build = async () => {
             .replace('{{ type }}', icon.type)
             .replace('{{ loader }}', '<div>Loading...</div>')
             .replace('{{ loaderImport }}', '')
-            .replace('{{ key }}', icon.name);
+            .replace('{{ key }}', toFunctionName(icon.name));
 
         suspenseDemoMap.push(`\t'${key.replace(/-/g, '')}': \`${suspenseCopyableDemo}\``);
 
@@ -215,13 +240,13 @@ const build = async () => {
             .replace('{{ loaderImport }}', 'import { FluidLoader } from \'../../components/fluid-loader\';')
             .replace('{{ key }}', importKey.replace(/-/g, ''));
 
-        const fcCopyableDemo = suspenseTemplate
+        const fcCopyableDemo = fcTemplate
             .replace('{{ name }}', icon.name)
             .replace('{{ set }}', icon.set)
             .replace('{{ type }}', icon.type)
             .replace('{{ loader }}', '<div>Loading...</div>')
             .replace('{{ loaderImport }}', '')
-            .replace('{{ key }}', icon.name);
+            .replace('{{ key }}', toFunctionName(icon.name));
 
         fcDemoMap.push(`\t'${key.replace(/-/g, '')}': \`${fcCopyableDemo}\``);
 

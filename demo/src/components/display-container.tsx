@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import styled from 'styled-components';
 import { CopyContent } from './copy-content';
-import { Loader } from '../generated/suspense';
-import { examples } from '../generated/suspense/examples';
+import { Loader as FcLoader } from '../generated/fc';
+import { Loader as SuspenseLoader } from '../generated/suspense';
+import { examples as fcExamples } from '../generated/fc/examples';
+import { examples as suspenseExamples } from '../generated/suspense/examples';
+import { Switcher, SwitchValue } from './switcher';
+
 interface DisplayContainerProps {
   importKey: string;
 }
 interface HeroProps {
   isCodeBlock?: boolean;
+}
+
+interface LoaderProps {
+  requestKey: string;
+}
+
+type LoaderMap = {
+  [P in SwitchValue]: {
+    Loader: React.FC<LoaderProps>,
+    examples: Record<string, string>
+  }
 }
 
 const DisplayContainerRoot = styled.div`
@@ -32,8 +47,22 @@ const Hero = styled.div<HeroProps>`
   padding: 1rem;
 `;
 
-export const DisplayContainer: React.FC<DisplayContainerProps> = ({ importKey }) => {
+const loaderMap: LoaderMap = {
+  suspense: {
+    Loader: SuspenseLoader,
+    examples: suspenseExamples,
+  },
+  fc: {
+    Loader: FcLoader,
+    examples: fcExamples,
+  }
+}
 
+export const DisplayContainer: React.FC<DisplayContainerProps> = ({ importKey }) => {
+  const [{ examples, Loader }, setLoaders] = useState(loaderMap['suspense']);
+
+  const onChange = (value: SwitchValue) => setLoaders(loaderMap[value]);
+  
   return (
     <DisplayContainerRoot>
       <Hero isCodeBlock>
@@ -44,6 +73,7 @@ export const DisplayContainer: React.FC<DisplayContainerProps> = ({ importKey })
           {examples[importKey]}
         </SyntaxHighlighter>
         <CopyContent text={examples[importKey]} />
+        <Switcher onChange={onChange}/>
       </Hero>
       <Hero>
         <Loader requestKey={importKey} /> 
