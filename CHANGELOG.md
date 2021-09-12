@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.1.0...v1.1.1) (2021-09-12)
+
+
+### Bug Fixes
+
+* fallback for copy to clipboard in demo app so this it can flag success ([cbc2a0a](https://github.com/Tyson-Skiba/weather-icons-react/commit/cbc2a0a22b7fd54c69455b729da33226bad26fe4))
+
 # [1.1.0](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.7...v1.1.0) (2021-09-12)
 
 
