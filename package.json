@@ -9,6 +9,7 @@
   "license": "MIT",
   "scripts": {
     "generate": "ts-node --project ./node.tsconfig.json build.ts",
+    "release": "npx semantic-release",
     "compile": "rimraf dist && tsc",
     "compile:watch": "rimraf dist && tsc -w",
     "link:demo": "yarn link && cd ./demo && yarn link react-weather-icons && yarn compile:watch",
