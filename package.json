@@ -1,5 +1,5 @@
 {
-  "name": "react-weather-icons",
+  "name": "react-weather-illustrations",
   "version": "1.0.0",
   "description": "A react wrapper around @bybas/weather-icons that allows chunking of assets to aid with caching and reduce initial bundle size",
   "main": "dist/src/index.js",
@@ -12,7 +12,7 @@
     "release": "npx semantic-release",
     "compile": "rimraf dist && tsc",
     "compile:watch": "rimraf dist && tsc -w",
-    "link:demo": "yarn link && cd ./demo && yarn link react-weather-icons && yarn compile:watch",
+    "link:demo": "yarn link && cd ./demo && yarn link react-weather-illustrations && yarn compile:watch",
     "unlink:demo": "yarn unlink"
   },
   "peerDependencies": {

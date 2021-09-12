@@ -1,4 +1,4 @@
-# react-weather-icons
+# react-weather-illustrations
 
 This is a react wrapper for the awesome [weather icon library](https://www.npmjs.com/package/@bybas/weather-icons) produced by [Bas Milius](https://bas.dev/).
 This library is rather large (2mb) so my wrapper uses dynamic imports to request the icon when you need it instead of adding the entire icon library to your initial bundle.
@@ -16,7 +16,7 @@ Currently there are two.
 
 ```tsx
 import React, { useState, useEffect } from 'react';
-import { loadSvgStringAsync } from 'react-weather-icons';
+import { loadSvgStringAsync } from 'react-weather-illustrations';
 
 const Demo: React.FC = () => {
     const [icon, setIcon] = useState<string | undefined>();
@@ -41,7 +41,7 @@ const Demo: React.FC = () => {
 
 ```tsx
 import React, { useState, useEffect } from 'react';
-import { loadAsync } from 'react-weather-icons';
+import { loadAsync } from 'react-weather-illustrations';
 
 const Demo: React.FC = () => {
     const [Icon, setIcon] = useState<JSX.Element | undefined>();
@@ -66,7 +66,7 @@ Because suspense is reliant on a different flow this library exports `repositori
 
 ```tsx
 import React, { Suspense } from 'react';
-import { repositories } from 'react-weather-icons';
+import { repositories } from 'react-weather-illustrations';
 
 const Icon: React.FC = () => {
     const svg = repositories.fill.darksky.read('clear-night');

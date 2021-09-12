@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { iconMap } from 'react-weather-icons';
+import { iconMap } from 'react-weather-illustrations';
 import { Accordion } from './accordion';
 
 interface SidebarButtonProps {

@@ -34,7 +34,7 @@ export const mappedIcons = {{ iconMap }};
 `;
 
 const suspenseTemplate = `import React from 'react';
-import { repositories } from 'react-weather-icons';
+import { repositories } from 'react-weather-illustrations';
 
 const Icon: React.FC = () => {
   const svg = repositories.{{ set }}.{{ type }}.read('{{ name }}');
