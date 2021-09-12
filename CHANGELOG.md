@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.7...v1.1.0) (2021-09-12)
+
+
+### Features
+
+* added defering to laoder so that it doesn't flash when network requests are fast ([9245cd1](https://github.com/Tyson-Skiba/weather-icons-react/commit/9245cd1800ac4d8d115576de50aaab6f84e7aad5))
+
 ## [1.0.7](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.6...v1.0.7) (2021-09-12)
 
 
