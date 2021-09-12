@@ -35,6 +35,7 @@ export const mappedIcons = {{ iconMap }};
 
 const suspenseTemplate = `import React from 'react';
 import { repositories } from 'react-weather-illustrations';
+{{ loaderImport }}
 
 const Icon: React.FC = () => {
   const svg = repositories.{{ set }}.{{ type }}.read('{{ name }}');
@@ -42,7 +43,7 @@ const Icon: React.FC = () => {
 }
 
 export const {{ key }}: React.FC = () => (
-  <React.Suspense fallback={<div>Loading</div>}>
+  <React.Suspense fallback={{{ loader }}}>
     <Icon />
   </React.Suspense>
 )`;
@@ -169,12 +170,16 @@ const build = async () => {
             .replace('{{ name }}', icon.name)
             .replace('{{ set }}', icon.set)
             .replace('{{ type }}', icon.type)
+            .replace('{{ loader }}', '<FluidLoader />')
+            .replace('{{ loaderImport }}', 'import { FluidLoader } from \'../../components/fluid-loader\';')
             .replace('{{ key }}', importKey.replace(/-/g, ''));
 
         const copyableDemo = suspenseTemplate
             .replace('{{ name }}', icon.name)
             .replace('{{ set }}', icon.set)
             .replace('{{ type }}', icon.type)
+            .replace('{{ loader }}', '<div>Loading...</div>')
+            .replace('{{ loaderImport }}', '')
             .replace('{{ key }}', icon.name);
 
         demos.push(`\t'${key.replace(/-/g, '')}': \`${copyableDemo}\``);

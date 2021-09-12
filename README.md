@@ -1,5 +1,7 @@
 # react-weather-illustrations
 
+[![Demo app](https://img.shields.io/badge/demo-app-ff69b4)](https://tyson-skiba.github.io/weather-icons-react/) [![Bundle size](https://badgen.net/bundlephobia/min/react-weather-illustrations)](react-weather-illustrations) [![Support](https://img.shields.io/badge/react-%3E%3D16.3-brightgreen)](https://img.shields.io/badge/react-%3E%3D16.8-brightgreen) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 This is a react wrapper for the awesome [weather icon library](https://www.npmjs.com/package/@bybas/weather-icons) produced by [Bas Milius](https://bas.dev/).
 This library is rather large (2mb) so my wrapper uses dynamic imports to request the icon when you need it instead of adding the entire icon library to your initial bundle.
 

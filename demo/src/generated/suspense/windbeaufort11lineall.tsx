@@ -1,5 +1,6 @@
 import React from 'react';
 import { repositories } from 'react-weather-illustrations';
+import { FluidLoader } from '../../components/fluid-loader';
 
 const Icon: React.FC = () => {
   const svg = repositories.line.all.read('wind-beaufort-11');
@@ -7,7 +8,7 @@ const Icon: React.FC = () => {
 }
 
 export const Cmpwindbeaufort11lineall: React.FC = () => (
-  <React.Suspense fallback={<div>Loading</div>}>
+  <React.Suspense fallback={<FluidLoader />}>
     <Icon />
   </React.Suspense>
 )
