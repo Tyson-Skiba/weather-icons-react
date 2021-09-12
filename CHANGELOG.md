@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.0.0...v1.0.1) (2021-09-12)
+
+
+### Bug Fixes
+
+* update yarn link in demo app ([dd4eda6](https://github.com/Tyson-Skiba/weather-icons-react/commit/dd4eda66451b66b6b887a8df2f740299f123aad3))
+
 # 1.0.0 (2021-09-12)
 
 
