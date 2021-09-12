@@ -2,7 +2,6 @@ import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import styled from 'styled-components';
-import { repositories } from 'react-weather-illustrations';
 import { CopyContent } from './copy-content';
 import { Loader } from '../generated/suspense';
 import { examples } from '../generated/suspense/examples';
@@ -33,19 +32,8 @@ const Hero = styled.div<HeroProps>`
   padding: 1rem;
 `;
 
-const Icon: React.FC = () => {
-  const svg = repositories.fill.darksky.read('clear-night');
-  return <img src={svg} alt="weather icon" />;
-}
-
-export const Demo: React.FC = () => (
-  <React.Suspense fallback={<div>Loading</div>}>
-    <Icon />
-  </React.Suspense>
-)
-
 export const DisplayContainer: React.FC<DisplayContainerProps> = ({ importKey }) => {
-console.log(importKey)
+
   return (
     <DisplayContainerRoot>
       <Hero isCodeBlock>
@@ -58,7 +46,7 @@ console.log(importKey)
         <CopyContent text={examples[importKey]} />
       </Hero>
       <Hero>
-        <Loader requestKey={importKey} />
+        <Loader requestKey={importKey} /> 
       </Hero>
     </DisplayContainerRoot>
   )

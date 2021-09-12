@@ -1,4 +1,4 @@
-const fallbackCopyTextToClipboard = (text: string) => {
+const fallbackCopyTextToClipboard = (text: string, onComplete?: (success?: boolean) => void) => {
     var textArea = document.createElement("textarea");
     textArea.value = text;
     
@@ -13,10 +13,9 @@ const fallbackCopyTextToClipboard = (text: string) => {
   
     try {
       var successful = document.execCommand('copy');
-      var msg = successful ? 'successful' : 'unsuccessful';
-      console.log('Fallback: Copying text command was ' + msg);
+      if (onComplete) onComplete(successful);
     } catch (err) {
-      console.error('Fallback: Oops, unable to copy', err);
+      if (onComplete) onComplete(false);
     }
   
     document.body.removeChild(textArea);
@@ -25,7 +24,7 @@ const fallbackCopyTextToClipboard = (text: string) => {
 
 export const copyTextToClipboard = (text: string, onComplete?: (success?: boolean) => void) => {
     if (!navigator.clipboard) {
-      fallbackCopyTextToClipboard(text);
+      fallbackCopyTextToClipboard(text, onComplete);
       return;
     }
 
