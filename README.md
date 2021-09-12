@@ -45,7 +45,7 @@ const Demo: React.FC = () => {
 import React, { useState, useEffect } from 'react';
 import { loadAsync } from 'react-weather-illustrations';
 
-const Demo: React.FC = () => {
+const Temperature: React.FC = () => {
     const [Icon, setIcon] = useState<JSX.Element | undefined>();
 
     useEffect(() => {
@@ -80,4 +80,25 @@ export const Temperature: React.FC = () => (
         <Icon />
     </Suspense>
 )
+```
+
+### Loadable
+
+This is an example of how this library can be used with one of many third party loading tools.
+
+```tsx
+import React from 'react';
+import loadable from '@loadable/component';
+import { loadSvgStringAsync } from 'react-weather-illustrations';
+
+const loader = async () => {
+  const icon = await loadSvgStringAsync('darksky', 'fill', 'clear-night');
+  return {
+    default: () => <img src={icon} alt="" />
+  }
+};
+
+export const Temperature = loadable(loader, {
+  fallback: <div>Loading...</div>,
+})
 ```

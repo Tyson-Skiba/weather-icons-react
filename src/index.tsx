@@ -33,19 +33,6 @@ interface SvgImport {
 	default: string;
 }
 
-/*
-declare module '*.svg' {
-    import * as React from 'react';
-  
-    export const ReactComponent: React.FunctionComponent<React.SVGProps<
-      SVGSVGElement
-    > & { title?: string }>;
-  
-    const src: string;
-    export default src;
-}
-*/
-
 const cache: Record<string, SvgImport> = {};
 
 async function loadIconSvgAsync<TIconType extends IconType, T extends IconSet<TIconType>>(iconSet: T, iconType: IconType, iconName: IconNames<TIconType, T>) {

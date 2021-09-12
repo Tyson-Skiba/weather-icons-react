@@ -27,6 +27,7 @@ const rootPath = path.join(packagePath, 'production');
 const demoComponentPath = path.join(__dirname, 'demo', 'src', 'generated');
 const demoComponentPathSuspense = path.join(demoComponentPath, 'suspense');
 const demoComponentPathFc = path.join(demoComponentPath, 'fc');
+const demoComponentPathLoadable = path.join(demoComponentPath, 'loadable');
 
 const nameMap: Record<string, string> = {
     "01d": "ClearDay",
@@ -95,6 +96,23 @@ export const {{ key }}: React.FC = () => {
 }
 `;
 
+const loadableTemplate = `import React from 'react';
+import loadable from '@loadable/component';
+import { loadSvgStringAsync } from 'react-weather-illustrations';
+{{ loaderImport }}
+
+const loader = async () => {
+  const icon = await loadSvgStringAsync('{{ type }}', '{{ set }}', '{{ name }}');
+  return {
+    default: () => <img src={icon} alt="" />
+  }
+};
+
+export const {{ key }} = loadable(loader, {
+  fallback: {{ loader }},
+})
+`;
+
 const supenseLoaderTemplate = `import React from 'react';
 
 {{ imports }}
@@ -103,7 +121,7 @@ interface SuspenseLoaderProps {
     requestKey: string;
 }
 
-const components: Record<string, React.FC<{}>> = {
+const components: Record<string, {{ recordType }}> = {
     {{ components }}
 }
 
@@ -207,6 +225,7 @@ const build = async () => {
     const importKeys: string[] = [];
     const suspenseDemoMap: string[] = [];
     const fcDemoMap: string[] = []
+    const loadableDemoMap: string[] = [];
 
     const fileCreation = icons.flatMap(icon => {
         const key = `${icon.name}${icon.set}${icon.type}`.replace(/-/g, '');
@@ -250,9 +269,28 @@ const build = async () => {
 
         fcDemoMap.push(`\t'${key.replace(/-/g, '')}': \`${fcCopyableDemo}\``);
 
+        const loadable = loadableTemplate
+            .replace('{{ name }}', icon.name)
+            .replace('{{ set }}', icon.set)
+            .replace('{{ type }}', icon.type)
+            .replace('{{ loader }}', '<FluidLoader />')
+            .replace('{{ loaderImport }}', 'import { FluidLoader } from \'../../components/fluid-loader\';')
+            .replace('{{ key }}', importKey.replace(/-/g, ''));
+
+        const loadableCopyableDemo = loadableTemplate
+            .replace('{{ name }}', icon.name)
+            .replace('{{ set }}', icon.set)
+            .replace('{{ type }}', icon.type)
+            .replace('{{ loader }}', '<div>Loading...</div>')
+            .replace('{{ loaderImport }}', '')
+            .replace('{{ key }}', toFunctionName(icon.name));
+
+        loadableDemoMap.push(`\t'${key.replace(/-/g, '')}': \`${loadableCopyableDemo}\``);
+
         return [
             fs.writeFile(path.join(demoComponentPathSuspense, `${key}.tsx`), suspsense),
             fs.writeFile(path.join(demoComponentPathFc, `${key}.tsx`), fc),
+            fs.writeFile(path.join(demoComponentPathLoadable, `${key}.tsx`), loadable),
         ];
     })
 
@@ -260,7 +298,8 @@ const build = async () => {
 
     const suspenseIndex = supenseLoaderTemplate
         .replace('{{ imports }}', importKeys.map(key => `import { Cmp${key}} from './${key}';`).join('\n'))
-        .replace('{{ components }}', importKeys.map(key => `Cmp${key}: Cmp${key}`).join(',\n'));
+        .replace('{{ components }}', importKeys.map(key => `Cmp${key}: Cmp${key}`).join(',\n'))
+        .replace('{{ recordType }}', 'React.FC<{}>');
 
     await fs.writeFile(path.join(demoComponentPathSuspense, 'index.tsx'), suspenseIndex);
 
@@ -271,7 +310,8 @@ const build = async () => {
 
     const fcIndex = supenseLoaderTemplate
         .replace('{{ imports }}', importKeys.map(key => `import { Cmp${key}} from './${key}';`).join('\n'))
-        .replace('{{ components }}', importKeys.map(key => `Cmp${key}: Cmp${key}`).join(',\n'));
+        .replace('{{ components }}', importKeys.map(key => `Cmp${key}: Cmp${key}`).join(',\n'))
+        .replace('{{ recordType }}', 'React.FC<{}>');
 
     await fs.writeFile(path.join(demoComponentPathFc, 'index.tsx'), fcIndex);
 
@@ -279,6 +319,18 @@ const build = async () => {
         .replace('{{ demos }}', fcDemoMap.join(',\n'));
 
     await fs.writeFile(path.join(demoComponentPathFc, 'examples.tsx'), fcExamples);
+
+    const loadableIndex = supenseLoaderTemplate
+        .replace('{{ imports }}', 'import { LoadableComponent } from \'@loadable/component\';' + importKeys.map(key => `import { Cmp${key}} from './${key}';`).join('\n'))
+        .replace('{{ components }}', importKeys.map(key => `Cmp${key}: Cmp${key}`).join(',\n'))
+        .replace('{{ recordType }}', 'LoadableComponent<unknown>');
+
+    await fs.writeFile(path.join(demoComponentPathLoadable, 'index.tsx'), loadableIndex);
+
+    const loadableExamples = suspenseDemos
+        .replace('{{ demos }}', loadableDemoMap.join(',\n'));
+
+    await fs.writeFile(path.join(demoComponentPathLoadable, 'examples.tsx'), loadableExamples);
 }
 
 build()

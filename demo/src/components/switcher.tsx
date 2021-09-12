@@ -4,7 +4,8 @@ import SwitchSelector from "react-switch-selector";
 
 export enum SwitchValue {
     Suspense = 'suspense',
-    FunctionalComponent = 'fc'
+    FunctionalComponent = 'fc',
+    Loadable = 'loadable',
 }
 
 interface SwitcherProps {
@@ -36,7 +37,7 @@ const options = [
     },
     {
         label: "Loadable",
-        value: SwitchValue.FunctionalComponent,
+        value: SwitchValue.Loadable,
         selectedBackgroundColor: "#8560f7",
         fontColor: "#8560f7"
     }

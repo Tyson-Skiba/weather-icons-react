@@ -5,8 +5,10 @@ import styled from 'styled-components';
 import { CopyContent } from './copy-content';
 import { Loader as FcLoader } from '../generated/fc';
 import { Loader as SuspenseLoader } from '../generated/suspense';
+import { Loader as LoadableLoader } from '../generated/loadable';
 import { examples as fcExamples } from '../generated/fc/examples';
 import { examples as suspenseExamples } from '../generated/suspense/examples';
+import { examples as loadableExamples } from '../generated/loadable/examples';
 import { Switcher, SwitchValue } from './switcher';
 
 interface DisplayContainerProps {
@@ -55,6 +57,10 @@ const loaderMap: LoaderMap = {
   fc: {
     Loader: FcLoader,
     examples: fcExamples,
+  },
+  loadable: {
+    Loader: LoadableLoader,
+    examples: loadableExamples,
   }
 }
 
