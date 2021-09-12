@@ -13,15 +13,58 @@ type IconNames = Record<string, Record<string, string>>;
 type IconSet = Record<string, IconNames>;
 type IconMap = Record<string, IconSet>;
 
+interface IconConfig {
+    name: string;
+    set: string;
+    type: string;
+}
+
 const outputPath = path.join(__dirname, 'src', 'icon-map.ts');
 const orgPath = path.join(__dirname, './node_modules', '@bybas');
 const packagePath = path.join(orgPath, 'weather-icons');
 const rootPath = path.join(packagePath, 'production');
 
+const demoComponentPath = path.join(__dirname, 'demo', 'src', 'generated');
+const demoComponentPathSuspense = path.join(demoComponentPath, 'suspense');
+
 const mapTemplate = `/* THIS IS A GENERATED FILE */
 /* DO NOT EDIT ME DIRECTLLY */
 
 export const mappedIcons = {{ iconMap }};
+`;
+
+const suspenseTemplate = `import React from 'react';
+import { repositories } from 'react-weather-icons';
+
+const Icon: React.FC = () => {
+  const svg = repositories.{{ set }}.{{ type }}.read('{{ name }}');
+  return <img src={svg} alt="weather icon" />;
+}
+
+export const {{ key }}: React.FC = () => (
+  <React.Suspense fallback={<div>Loading</div>}>
+    <Icon />
+  </React.Suspense>
+)`;
+
+const supenseLoaderTemplate = `import React from 'react';
+
+{{ imports }}
+
+interface SuspenseLoaderProps {
+    requestKey: string;
+}
+
+const components: Record<string, React.FC<{}>> = {
+    {{ components }}
+}
+
+export const Loader: React.FC<SuspenseLoaderProps> = ({
+    requestKey
+}) => {
+    const Cmp = components[\`Cmp\${requestKey}\`];
+    return <Cmp />;
+}
 `;
 
 const checkIfPathExists = async (file: string) => {
@@ -72,6 +115,7 @@ const build = async () => {
     const iconMaps = await Promise.all(iconMapPromises);
 
     const mappedIcons: IconSet = {};
+    const icons: IconConfig[] = [];
 
     /* This is bad code, refactor */
     iconMaps.forEach(iconTypeData => { 
@@ -86,7 +130,14 @@ const build = async () => {
             const iconNamesMap: Record<string, string> = {};
 
             iconNamesData.forEach(value => {
-                iconNamesMap[value.replace('.svg', '')] = value;
+                const name = value.replace('.svg', '');
+                iconNamesMap[name] = value;
+        
+                icons.push({
+                    name,
+                    type: iconSetId,
+                    set: iconTypeId,
+                })
             })
             
             mappedNames[iconSetId] = iconNamesMap;
@@ -99,6 +150,31 @@ const build = async () => {
 
     const fileContents = mapTemplate.replace('{{ iconMap }}', JSON.stringify(mappedIcons, null, 4));
     await fs.writeFile(outputPath, fileContents);
+
+    const importKeys: string[] = [];
+
+    const fileCreation = icons.map(icon => {
+        const key = `${icon.name}${icon.set}${icon.type}`.replace(/-/g, '');
+        const importKey = `Cmp${key}`;
+
+        importKeys.push(key);
+
+        const suspsense = suspenseTemplate
+            .replace('{{ name }}', icon.name)
+            .replace('{{ set }}', icon.set)
+            .replace('{{ type }}', icon.type)
+            .replace('{{ key }}', importKey.replace(/-/g, ''));
+
+        return fs.writeFile(path.join(demoComponentPathSuspense, `${key}.tsx`), suspsense);
+    })
+
+    await Promise.all(fileCreation);
+
+    const suspenseIndex = supenseLoaderTemplate
+        .replace('{{ imports }}', importKeys.map(key => `import { Cmp${key}} from './${key}';`).join('\n'))
+        .replace('{{ components }}', importKeys.map(key => `Cmp${key}: Cmp${key}`).join(',\n'));
+
+    await fs.writeFile(path.join(demoComponentPathSuspense, 'index.tsx'), suspenseIndex);
 }
 
 build()

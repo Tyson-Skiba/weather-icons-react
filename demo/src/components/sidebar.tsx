@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { iconMap } from 'weather-icons-react';
+import { iconMap } from 'react-weather-icons';
 import { Accordion } from './accordion';
 
 interface SidebarButtonProps {
     indent?: number;
+}
+
+interface SidebarProps {
+    onClick: (id: string) => void;
 }
 
 type DataType = Record<
@@ -35,7 +39,7 @@ const SidebarButton = styled.div<SidebarButtonProps>`
 
 const mappedIcons = iconMap as DataType;
 
-export const Sidebar: React.FC = () => {
+export const Sidebar: React.FC<SidebarProps> = ({ onClick }) => {
 
     return (
         <SidebarRoot>
@@ -49,6 +53,7 @@ export const Sidebar: React.FC = () => {
                             <SidebarButton
                                 key={`${iconSet}-${iconType}-${name}`}
                                 indent={3}
+                                onClick={() => onClick(`${name}${iconSet}${iconType}`.replace(/-/g, ''))}
                             >
                                 { name }
                             </SidebarButton>

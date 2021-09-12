@@ -2,15 +2,19 @@ import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import styled from 'styled-components';
-import { repositories } from 'weather-icons-react';
+import { repositories } from 'react-weather-icons';
 import { CopyContent } from './copy-content';
+import { Loader } from '../generated/suspense';
 
+interface DisplayContainerProps {
+  importKey: string;
+}
 interface HeroProps {
-    isCodeBlock?: boolean;
+  isCodeBlock?: boolean;
 }
 
 const demoCode = `import React from 'react';
-import { repositories } from 'weather-icons-react';
+import { repositories } from 'react-weather-icons';
 
 const Icon: React.FC = () => {
   const svg = repositories.fill.darksky.read('clear-night');
@@ -55,22 +59,22 @@ export const Demo: React.FC = () => (
   </React.Suspense>
 )
 
-export const DisplayContainer: React.FC = () => {
+export const DisplayContainer: React.FC<DisplayContainerProps> = ({ importKey }) => {
 
-    return (
-        <DisplayContainerRoot>
-            <Hero isCodeBlock>
-                <SyntaxHighlighter
-                    language="typescript"
-                    style={tomorrow}
-                >
-                    {demoCode}
-                </SyntaxHighlighter>
-                <CopyContent text={demoCode} />
-            </Hero>
-            <Hero>
-                <Demo />
-            </Hero>
-        </DisplayContainerRoot>
-    )
+  return (
+    <DisplayContainerRoot>
+      <Hero isCodeBlock>
+        <SyntaxHighlighter
+          language="typescript"
+          style={tomorrow}
+        >
+          {demoCode}
+        </SyntaxHighlighter>
+        <CopyContent text={demoCode} />
+      </Hero>
+      <Hero>
+        <Loader requestKey={importKey} />
+      </Hero>
+    </DisplayContainerRoot>
+  )
 }

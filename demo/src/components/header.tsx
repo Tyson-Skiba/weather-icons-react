@@ -37,8 +37,8 @@ export const Header: React.FC = () => (
             weather-icons-react
         </Title>
         <LinkContainer>
-            <Npm size="2.5rem" />
-            <Github size="2rem" />
+            <Npm size="2.5rem" onClick={() => window.open('https://www.npmjs.com/package/react-weather-icons', '_blank')} />
+            <Github size="2rem" onClick={() => window.open('https://github.com/Tyson-Skiba/weather-icons-react', '_blank')} />
         </LinkContainer>
     </HeaderRoot>
 )
