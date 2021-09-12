@@ -67,6 +67,11 @@ export const Loader: React.FC<SuspenseLoaderProps> = ({
 }
 `;
 
+const suspenseDemos = `export const examples = {
+    {{ demos }}
+}
+`;
+
 const checkIfPathExists = async (file: string) => {
     try {
         await fs.access(file, constants.F_OK);
@@ -152,6 +157,7 @@ const build = async () => {
     await fs.writeFile(outputPath, fileContents);
 
     const importKeys: string[] = [];
+    const demos: string[] = [];
 
     const fileCreation = icons.map(icon => {
         const key = `${icon.name}${icon.set}${icon.type}`.replace(/-/g, '');
@@ -165,6 +171,14 @@ const build = async () => {
             .replace('{{ type }}', icon.type)
             .replace('{{ key }}', importKey.replace(/-/g, ''));
 
+        const copyableDemo = suspenseTemplate
+            .replace('{{ name }}', icon.name)
+            .replace('{{ set }}', icon.set)
+            .replace('{{ type }}', icon.type)
+            .replace('{{ key }}', icon.name);
+
+        demos.push(`\t${importKey.replace(/-/g, '')}: ${copyableDemo}`);
+
         return fs.writeFile(path.join(demoComponentPathSuspense, `${key}.tsx`), suspsense);
     })
 
@@ -175,6 +189,11 @@ const build = async () => {
         .replace('{{ components }}', importKeys.map(key => `Cmp${key}: Cmp${key}`).join(',\n'));
 
     await fs.writeFile(path.join(demoComponentPathSuspense, 'index.tsx'), suspenseIndex);
+
+    const suspenseExamples = suspenseDemos
+        .replace('{{ demos }}', demos.join(',\n'));
+
+    await fs.writeFile(path.join(demoComponentPathSuspense, 'examples.tsx'), suspenseExamples);
 }
 
 build()

@@ -10,7 +10,7 @@ Currently this can be used with suspense, dynamic loading libraries such as reac
 ### Promise
 
 This is the basic loader for use with everything except React suspense.
-Currently there are two. 
+Currently there are two.
 
 #### String Loader
 
