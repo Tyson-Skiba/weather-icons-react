@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[74],{406:function(e,t,a){"use strict";a.r(t),t.default=a.p+"static/media/starry-night.509aeabb.svg"}}]);
-//# sourceMappingURL=74.9ceecbe1.chunk.js.map

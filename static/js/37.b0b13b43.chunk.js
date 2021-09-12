@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[37],{369:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/moonset.7d3bfe65.svg"}}]);
-//# sourceMappingURL=37.b0b13b43.chunk.js.map

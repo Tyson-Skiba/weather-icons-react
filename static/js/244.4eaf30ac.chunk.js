@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[244],{576:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/thunderstorms-day-snow.2842d4ba.svg"}}]);
-//# sourceMappingURL=244.4eaf30ac.chunk.js.map

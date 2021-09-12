@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[164],{496:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/compass.7958cf25.svg"}}]);
-//# sourceMappingURL=164.01572842.chunk.js.map

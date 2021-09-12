@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[161],{493:function(e,t,a){"use strict";a.r(t),t.default=a.p+"static/media/clear-day.82d493fc.svg"}}]);
-//# sourceMappingURL=161.8036927f.chunk.js.map

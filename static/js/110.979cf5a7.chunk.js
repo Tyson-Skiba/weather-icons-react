@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[110],{442:function(e,t,a){"use strict";a.r(t),t.default=a.p+"static/media/wind-beaufort-0.e4dba835.svg"}}]);
-//# sourceMappingURL=110.979cf5a7.chunk.js.map

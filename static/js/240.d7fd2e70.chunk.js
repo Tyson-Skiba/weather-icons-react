@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[240],{572:function(e,t,a){"use strict";a.r(t),t.default=a.p+"static/media/thermometer-mercury.a150706a.svg"}}]);
-//# sourceMappingURL=240.d7fd2e70.chunk.js.map

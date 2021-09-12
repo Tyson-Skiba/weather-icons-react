@@ -1,2 +1,0 @@
-(this["webpackJsonpweather-icons-react-demo"]=this["webpackJsonpweather-icons-react-demo"]||[]).push([[295],{627:function(e,t,a){"use strict";a.r(t),t.default=a.p+"static/media/tornado.a88ffd1b.svg"}}]);
-//# sourceMappingURL=295.b82c765e.chunk.js.map
