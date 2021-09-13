@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.2.0...v1.3.0) (2021-09-13)
+
+
+### Features
+
+* add mobile demo ([6cfe173](https://github.com/Tyson-Skiba/weather-icons-react/commit/6cfe1730f3652a95d191864594e8c22aa8ac0f52))
+
 # [1.2.0](https://github.com/Tyson-Skiba/weather-icons-react/compare/v1.1.1...v1.2.0) (2021-09-12)
 
 
