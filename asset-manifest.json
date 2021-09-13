@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/weather-icons-react/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/weather-icons-react/static/js/main.3a10190b.chunk.js",
-    "main.js.map": "/weather-icons-react/static/js/main.3a10190b.chunk.js.map",
+    "main.js": "/weather-icons-react/static/js/main.d6517749.chunk.js",
+    "main.js.map": "/weather-icons-react/static/js/main.d6517749.chunk.js.map",
     "runtime-main.js": "/weather-icons-react/static/js/runtime-main.0f7eee74.js",
     "runtime-main.js.map": "/weather-icons-react/static/js/runtime-main.0f7eee74.js.map",
     "static/js/2.b5d4745b.chunk.js": "/weather-icons-react/static/js/2.b5d4745b.chunk.js",
@@ -782,6 +782,6 @@
     "static/js/runtime-main.0f7eee74.js",
     "static/js/2.b5d4745b.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.3a10190b.chunk.js"
+    "static/js/main.d6517749.chunk.js"
   ]
 }
