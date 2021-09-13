@@ -19,12 +19,13 @@ const ContentWrapper = styled.div`
 
 const App: React.FC = () => {
   const [key, setKey] = useState('01dlineopenweathermap');
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <AppWrapper>
-      <Header />
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <ContentWrapper>
-        <Sidebar onClick={id => setKey(id)}/>
+        <Sidebar onClick={id => setKey(id)} isOpen={isOpen} setIsOpen={setIsOpen} />
         <DisplayContainer importKey={key} />
       </ContentWrapper>
       <Footer />

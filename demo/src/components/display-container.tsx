@@ -32,6 +32,11 @@ type LoaderMap = {
 const DisplayContainerRoot = styled.div`
   display: flex;
   background: rgb(246, 249, 252);
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
 `;
 
 const Hero = styled.div<HeroProps>`
@@ -47,6 +52,13 @@ const Hero = styled.div<HeroProps>`
   margin-right: ${ ({ isCodeBlock }) => isCodeBlock ? '0rem' : '1rem' };
   margin-left: 1.5rem;
   padding: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    width: calc(100vw - 3rem);
+    margin-right: 1.5rem;
+    height: calc(50vh - 4rem);
+    margin-bottom: ${ ({ isCodeBlock }) => isCodeBlock ? '1rem' : 'unset' };
+  }
 `;
 
 const loaderMap: LoaderMap = {
